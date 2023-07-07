@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family= Inter:wght@300 & display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #ae384f;
+    box-shadow: 0px 3px 10px #464646;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;;
+}
+
+.easybank {
+    width: 30%;
+    margin-top: -50rem;
+    margin-bottom: -50rem;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin-right: 30px; 
+}
+
+.nav-item:first-child {
+    margin-left: 0; 
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+.login-button button {
+    border: none;
+    background-color: #2f353e;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.login-button button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 730px) {
+    .nav-bar {
+        padding: 1.5rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    .login-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border-color: transparent;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+}
+
+.buttons-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.buttons-container {
+    text-align: center;
+}
+
+.entrada-btn, .saida-btn {
+    display: inline-block;
+    background-color: #ae384f;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.entrada-btn span, .saida-btn span {
+    display: block;
+}
+
+.entrada-btn span:first-child, .saida-btn span:first-child {
+    font-weight: bold;
+}
+
+.entrada-btn span:last-child, .saida-btn span:last-child {
+    font-size: 14px;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.metas-container,
+.despesas-container,
+.investimentos-container {
+    text-align: left;
+    padding: 10px;
+}
+
+.opcoes-despesas, .opcoes-investimentos {
+    margin-top: 10px;
+}
+
+.opcoes-despesas label, .opcoes-investimentos label {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #ae384f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.opcoes-despesas label:hover, .opcoes-investimentos label:hover {
+    background-color: #ff6384;
+}
+
+.opcoes-despesas input[type="radio"],
+.opcoes-investimentos input[type="radio"] {
+    display: none;
+}
